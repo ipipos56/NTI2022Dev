@@ -1,0 +1,24 @@
+path = "C:/NTI2022Dev/4Task/cmake-build-debug/output.txt"
+x = 0
+y = 0
+res = File.ReadLine(path, 1)
+commaIndex = Text.GetIndexOf(res,",")
+height = Text.GetSubText(res, commaIndex+1, Text.GetLength(res))
+width = Text.GetSubText(res, 1, commaIndex-1)
+GraphicsWindow.Width = width
+GraphicsWindow.Height = height
+
+For x = 2 To width + 1
+  line = File.ReadLine(path,x)
+  For y = 1 To height
+    color = Text.GetSubText(line,y,1)
+    If color = 0 Then
+      color = "#000000"
+    ElseIf color = 1 Then
+    color = "#FF0000"
+      ElseIf color = 2 Then
+      color = "#0000FF"
+    EndIf
+    GraphicsWindow.SetPixel(x-1,y,color)
+EndFor
+  EndFor

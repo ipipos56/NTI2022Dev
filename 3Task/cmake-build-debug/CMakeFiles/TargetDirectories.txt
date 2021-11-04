@@ -1,0 +1,3 @@
+C:/NTI2022Dev/3Task/cmake-build-debug/CMakeFiles/3Task.dir
+C:/NTI2022Dev/3Task/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/NTI2022Dev/3Task/cmake-build-debug/CMakeFiles/rebuild_cache.dir
